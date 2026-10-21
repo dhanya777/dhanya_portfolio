@@ -53,7 +53,7 @@ Then open <http://localhost:8765/dhanya_portfolio/>.
 
 ## Deploy
 
-GitHub Pages serves `main` from the repository root, so pushing deploys the site:
+Pushing to `main` runs `.github/workflows/pages.yml`, which publishes the repository root to GitHub Pages:
 
 ```bash
 git add -A && git commit -m "Redesign portfolio" && git push origin main
