@@ -1,793 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/styles.css">
+<html lang="en" data-theme="dark" data-mode="recruiter">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dhanya Vangalapudi — Senior Data Engineer · Cloud Data Platforms · AI/ML Engineering</title>
+  <meta name="description" content="Data engineer building reliable pipelines, cloud data platforms on Google Cloud, and AI-assisted data products. Case studies, reference architectures and engineering decisions.">
+  <meta name="author" content="Dhanya Vangalapudi">
+  <link rel="canonical" href="https://dhanya777.github.io/dhanya_portfolio/">
+  <meta name="theme-color" content="#0b0d12">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-8UZTlT7VrjkkPzye7Usi0rYQXqPH+Fg6ioK0f0pCPmwytFqjKlybOO+90+NWhU6/d9Xy27zU6rtHI2YZGObf6w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-        <!-- font awesome -->
-        <link rel="stylesheet" href="assets/css/font-awesome.css">
-        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-        <script src="assets/js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dhanya Vangalapudi — Senior Data Engineer">
+  <meta property="og:description" content="Reliable data pipelines, cloud data platforms and AI-assisted data products on Google Cloud.">
+  <meta property="og:url" content="https://dhanya777.github.io/dhanya_portfolio/">
+  <meta property="og:image" content="https://dhanya777.github.io/dhanya_portfolio/assets/site/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dhanya Vangalapudi — Senior Data Engineer">
+  <meta name="twitter:description" content="Reliable data pipelines, cloud data platforms and AI-assisted data products on Google Cloud.">
+  <meta name="twitter:image" content="https://dhanya777.github.io/dhanya_portfolio/assets/site/og-image.png">
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <title>Dhanya Vangalapudi</title>
-        <link rel="icon" href="assets/img/headerphoto-removebg.png">
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Dhanya Vangalapudi</a>
-                </div>
+  <link rel="icon" href="assets/site/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site/styles.css?v=20261021b">
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="fa fa-home nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class=" fa fa-info-circle nav__link">About</a></li>
-                        <li class="nav__item"><a href="#experience" class="fa fa-briefcase nav__link">Experience</a></li>
-                        <li class="nav__item"><a href="#education" class="fa fa-graduation-cap nav__link">Education</a></li>
-                        <li class="nav__item"><a href="#skills" class="fa fa-code nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#project" class="fa fa-tasks nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#certificate" class="fa fa-certificate nav__link">Certifications</a></li>
-                        <li class="nav__item"><a href="#extra-curricular" class="fa fa-trophy nav__link">Extra_Curriculars</a></li>
-                        <li class="nav__item"><a href="#achievements" class="fa fa-star nav__link">Achievements</a></li>
-                        <li class="nav__item"><a href="#contact" class="fas fa-envelope nav__link">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+  <script>
+    // Apply saved theme/mode before first paint to avoid a flash.
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (!t) t = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        document.documentElement.dataset.theme = t;
+        var m = new URLSearchParams(location.search).get("mode") || localStorage.getItem("mode");
+        if (m === "engineer" || m === "recruiter") document.documentElement.dataset.mode = m;
+      } catch (e) {}
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dhanya Vangalapudi",
+    "jobTitle": "Data Engineer",
+    "url": "https://dhanya777.github.io/dhanya_portfolio/",
+    "sameAs": ["https://www.linkedin.com/in/dhanya-vangalapudi", "https://github.com/dhanya777"],
+    "alumniOf": "National Institute of Technology Calicut"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-        <div class="homebg">
-            <main class="l-main">
-            <!--===== HOME =====-->
-                <!-- effect wrap star here -->
-                <div class="effect-wrap">
-                    <div class="effect effect-1">
-                    </div>
-                    <div class="effect effect-2">
-                        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div>
-                        </div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-                    </div>
-                    <div class="effect effect-3">
-                    </div>
-                    <div class="effect effect-4">
-                    </div>
-                    <div class="effect effect-5">
-                        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-                    </div>
-                </div>
-                <a id="mode-switcher" href="#" onclick="toggleMode(event)">
-                    <i class="fas fa-sun"></i>
-                </a>
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Dhanya Vangalapudi — home">
+        <span class="brand-mark" aria-hidden="true">DV</span>
+        <span class="brand-name">Dhanya Vangalapudi</span>
+      </a>
 
-                <!-- effect wrap ENd here -->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h2 class="home__title"><span class="home__title1">Hello, <span class="wave"><img src="assets/img/wave.png" alt = "" width="30" height="30"></span></span><br>I'am Dhanya Vangalapudi <br><span class="home__title-color"><span class="typing"></span></span></h2>
-                    <div class="home__img">
-                        <img src="assets/img/headerphoto-removebg.png" class="outer-shadow1" alt="">
-                    </div>
-                    <a href="resume/DhanyaResume.pdf" target="_blank" class="button1 outer-shadow hover-in-shadow" >View Resume</a>
-                </div>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul id="nav-list"></ul>
+      </nav>
 
-                <div class="social-links">
-                  <a href="mailto:dhanyav026@gmail.com" target="_blank" class="outer-shadow hover-in-shadow"><i class='bx bx-mail-send' ></i></a>
-                  <a href="https://www.linkedin.com/in/dhanya-vangalapudi" target="_blank" class="outer-shadow hover-in-shadow"><i class='bx bxl-linkedin'></i></a>
-                  <a href="https://wa.me/9177877367?text=Hai%2C%0Ai%20viewed%20your%20profile%2C%20can%20we%20have%20a%20chat%3F" target="_blank" class="outer-shadow hover-in-shadow"><i class='bx bxl-whatsapp' ></i></a>
-                  <a href="https://medium.com/@vangalapudi.dhanya" target="_blank" class="outer-shadow hover-in-shadow"><i class='bx bxl-medium' ></i></a>
-                  <a href="https://medium.com/@dhanyav026" target="_blank" class="outer-shadow hover-in-shadow"><i class='bx bxl-medium' ></i></a>
-                  <a href="https://partner.cloudskillsboost.google/public_profiles/bb8bb97a-e164-4f52-8b0e-240f31cc594a" target="_blank" class="outer-shadow hover-in-shadow"><i class='bx bxl-google'></i></a>
-                </div>
-            </section>
+      <div class="header-actions">
+        <div class="mode-switch" role="group" aria-label="Viewing mode">
+          <button type="button" data-set-mode="recruiter" aria-pressed="true">Recruiter</button>
+          <button type="button" data-set-mode="engineer" aria-pressed="false">Technical</button>
         </div>
+        <button type="button" class="icon-btn" id="theme-toggle" aria-label="Switch to light theme">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button type="button" class="icon-btn menu-btn" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
-        <!--===== ABOUT =====-->
-        <section class="about section" id="about">
-            <h2 class="section-title">About</h2>
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/img/about2.jpg" alt="">
-                </div>
-                <div>
-                    <h2 class="about__subtitle">Hey, I'am <span class="home__title-color2">Dhanya</span></h2>
-                    <p class="about__text">I am an IT-Professional with 2.5 years of experience, currently working as a data engineer in <b>NewsCorp</b>. I'm always passionate about <b>data </b> and have experience in developing of various data engineering project. I'm a Meticulous data engineer with over
-                        2.5 years of experience and
-                        passion for 
-                        with the ability to
-                        collaborate effectively with senior
-                        developers while spending extra
-                        time to be mentored. Skilled in designing, building and maintaining data pipelines and data warehouses. Proficient in SQL and Python. Possess excellent problem-solving skills and the ability to work in a fast-paced environment.
-                    </p>
-                </div>
-            </div>
-        </section>
+  <main id="main" tabindex="-1">
+    <div id="home-view"></div>
+    <div id="case-view" hidden></div>
+  </main>
 
+  <footer class="site-footer">
+    <div class="container footer-inner" id="footer"></div>
+  </footer>
 
-        <!-- EXperience section -->
-        <section class="experience section" id="experience">
-            <h2 class ="section-title">Experience</h2>
-            <div class="row bd-grid" >
-            <div class="experience tab-content">
-                <div class="row">
-                    <div class="timeline">
-                        <div class="row">
-                    <!-- time line item start here -->
-                    <div class="timeline-item">
-                        <div class="timeline-item-inner exp-shadow">
-                            <i class="fas fa-briefcase icon"></i>
-                            <span>Nov, 2023 - Present</span>
-                            <div class="expimg">
-                                <h3>Data Engineer</h3>
-                                <h4>NewsCorp</h4>
-                                <img src="assets/img/newscorp_l.png">
-                    
-                                <ul>
-                                    <li>
-                                        <p>
-                                            Ensured data accuracy during migration through comprehensive validation checks and proactively resolved production pipeline failures to maintain high system uptime.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Designed feed registry and audit metadata tables, enhancing the efficiency and reliability of data pipelines.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Worked on ongoing automation of database and transformation DAGs using Vertex AI, aimed at reducing manual effort and expediting processes.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Engaged in data club sessions and delivered talks on the evolution of data architecture and IoT, receiving positive feedback and contributing to organizational initiatives.
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                            <div class="timeline-item">
-                                <div class="timeline-item-inner exp-shadow">
-                                    <i class="fas fa-briefcase icon"></i>
-                                    <span>June, 2022 - Nov, 2023</span>
-                                    <div class="expimg">
-                                        <h3>Data Engineer</h3>
-                                        <h4>Searce Cosourcing Services (Searce)</h4>
-                                        <img src="assets/img/searcelogo.png">
+  <div class="review-banner" id="review-banner" hidden></div>
 
-                                        <ul>
-                                            <li>
-                                                <p>
-                                                    Designed and implemented data pipelines using GCP services like <strong>Dataflow</strong>, <strong>Cloud Storage</strong>, <strong>Pub/Sub</strong> and <strong>BigQuery</strong> to migrate data from SQL Server to BigQuery.
-                                                </p>
-                                            </li>
+  <noscript>
+    <div class="container noscript">
+      <h1>Dhanya Vangalapudi — Data Engineer</h1>
+      <p>Data engineer focused on reliable data pipelines, cloud data platforms on Google Cloud, and AI-assisted data products.</p>
+      <p><a href="resume/DhanyaResume.pdf">Download résumé (PDF)</a> ·
+         <a href="https://www.linkedin.com/in/dhanya-vangalapudi">LinkedIn</a> ·
+         <a href="https://github.com/dhanya777">GitHub</a> ·
+         <a href="mailto:dhanyav026@gmail.com">dhanyav026@gmail.com</a></p>
+      <p>Enable JavaScript to view case studies and the interactive architecture explorer.</p>
+    </div>
+  </noscript>
 
-                                            <li> 
-                                                <p>
-                                                    Successfully migrated 5TB of data from Snowflake to BigQuery using custom ETL pipelines and managed the entire process from data extraction to data validation and error handling.
-                                                </p>
-                                            </li>
-                                            <li> 
-                                                <p>
-                                                    Presented a demo of Datamesh capabilities to the Google Cloud team, showcasing how the platform can be used to enable data mesh architecture and improve data governance and access across the organization.
-                                                </p>
-                                            </li>
-                                            <li> 
-                                                <p>
-                                                    Developed and maintained data models, schemas and database structures using <strong>BigQuery</strong> and <strong>Cloud SQL</strong>.
-                                                </p>
-                                            </li>
-                                            <li> 
-                                                <p>
-                                                    Optimized pipeline performance and scalability by tuning SQL queries, optimizing Apache Beam code and leveraging GCP autoscaling features
-                                                    Collaborated with cross-functional teams including data scientists, business analysts and software engineers to design and implement data solutions that met the business needs
-                                                    Demonstrated expertise in all GCP services and technologies and stayed up-to-date with the latest developments and best practices in the field of data engineering.
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-item-inner exp-shadow">
-                                    <i class="fas fa-briefcase icon"></i>
-                                    <span>Jul, 2021</span>
-                                    <div class="expimg">
-                                        <h3>Internship</h3>
-                                        <h4>The Spark Foundation</h4>
-                                        <ul>
-                                            <li>
-                                                <p>Performed <strong>Data Cleaning, Data Visualization</strong> and <strong>Data Analysis</strong> on the dataset</p>
-                                            </li>
-                                            <li>
-                                                <p> To find weak areas where we can make more profit. using<strong>  Pandas, Numpy, pyplot etc:</strong> libraries.</p>
-                                            </li>
-                                            <li>
-                                                <p> Exploratory Data Analysis</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- timeline item end here -->
-        <!-- time line item start here -->
-
-
-        <!--Education Section-->
-        <section class="education section" id="education">
-            <h2 class ="section-title">Education</h2>
-            <div class="education__container bd-grid">
-                <div>
-                    <div class="education__data">
-                        <div class="q1">
-                            <div>
-                                <a href="" class="qualif__icon"><i class="fa fa-graduation-cap" aria-hidden="true" style="color: green;"></i></a>
-                            </div>
-                            <div>
-                                <h2 class="qualif__subtitle">National Institute of Technology Calicut</h2>
-                                <p class="qualif__text">2018 - 2022</p>
-                                <br>
-                                <p class="qualif__text">B.Tech, Production Engineering</p>
-                                <p class="qualif__text">Secured 8.43 CGPA</p>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="assets/img/nitc_logo1.png" alt="" class="skills__img" width="200" height="100">
-                        </div>
-                    </div>
-                    <div class="education__data">
-                        <div class="q2">
-                            <div>
-                                <a href="" class="qualif__icon"><i class="fa fa-graduation-cap" aria-hidden="true" style="color: green;"></i></a>
-                            </div>
-                            <div>
-                                <h2 class="qualif__subtitle">Sri Chaitanya Junior College, Vishakapatnam</h2>
-                                <p class="qualif__text">2015 - 2017 (Higher Secondary Education)</p>
-                                <br>
-                                <p class="qualif__text">HSE-Andhra Pradesh Board, Mathemetics, Physics and Chemistry</p>
-                                <p class="qualif__text">Secured 977/1000 marks </p>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="assets/img/college.jpg" alt="" class="skills__img" width="200" height="100">
-                        </div>
-                    </div>
-                    <div class="education__data">
-                        <div class="q3">
-                            <div>
-                                <a href="" class="qualif__icon"><i class="fa fa-graduation-cap" aria-hidden="true" style="color: green;"></i></a>
-                            </div>
-                            <div>
-                                <h2 class="qualif__subtitle">Siddhartha Public School, Tuni</h2>
-                                <p class="qualif__text">Upto 2015 (Secondary Education)</p>
-                                <br>
-                                <p class="qualif__text">Andhra Pradesh Board</p>
-                                <p class="qualif__text">Secured 9.5 CGPA</p>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="assets/img/school.png" alt="" class="skills__img" width="200" height="100">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--===== SKILLS =====-->
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills__container bd-grid">
-                <div>
-                    <h2 class="skills__subtitle">Profesional Skills</h2>
-                    <p class="skills__text"></p>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <span class="skills__name">Python</span>
-                            <img src="./assets/img/python.jpg" alt="Python" width="20" height="20" style="margin: 10px;">
-                        </div>
-                        <div class="skills__bar skills__python">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">80%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <span class="skills__name">SQL</span>
-                            <img src="./assets/img/sql.png" alt="SQL" width="20" height="20" style="margin: 10px;">
-                        </div>
-                        <div class="skills__bar skills__sql">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">90%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <span class="skills__name">Google Cloud</span>
-                            <img src="./assets/img/gcloud.png" alt="Google Cloud" width="30" height="30" style="margin: 10px;">
-                        </div>
-                        <div class="skills__bar skills__google_cloud">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">80%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <span class="skills__name">PySpark</span>
-                            <img src="./assets/img/pyspark.jpg" alt="PySpark" width="40" height="40" style="margin: 10px;">
-                        </div>
-                        <div class="skills__bar skills__PySpark">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">70%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <span class="skills__name">Airflow</span>
-                            <img src="./assets/img/airflow.jpg" alt="Airflow" width="20" height="20" style="margin: 10px;">
-                        </div>
-                        <div class="skills__bar skills__airflow">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">80%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <span class="skills__name">BigQuery</span>
-                            <img src="./assets/img/bigquery.png" alt="BigQuery" width="20" height="20" style="margin: 10px;">
-                        </div>
-                        <div class="skills__bar skills__bigquery">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">80%</span>
-                        </div>
-                    </div>
-
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <span class="skills__name">Tableau</span>
-                            <img src="./assets/img/tableau.png" alt="Tableau" width="30" height="30" style="margin: 10px;">
-                        </div>
-                        <div class="skills__bar skills__tableau">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">80%</span>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <img src="assets/img/coder.jpg" alt="" class="skills__img">
-                </div>
-            </div>
-        </section>
-
-        <section class="project section" id="project">
-            <h2 class ="section-title">Projects</h2>
-            <div class="project__container bd-grid">
-                <div id="Work" class="projects-section">
-                    <div class="wrapper projects-grid">
-                        <div class="normal-wrapper">
-                            <div class="normal-wrapper _48px-right_p _80px-bottom_m">
-                                <div class="overline_16px"><b>MY&nbsp;PROJECTS</b>
-                                </div>
-                                <h2 class="heading_55px">Work that I’ve done for the past 1 year</h2>
-                            </div>
-                            <div class="padding_bottom">
-                                <a data-w-id="f8f793d3-58bd-f512-c602-9d09cbd39316" href="#" class="project-wrapper _24px-bottom_m w-inline-block" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
-                                    <img src="./assets/img/stressanxietydepression.png" width="960" alt="" class="project-image" style="max-width: 100%;">
-                                    <div class="project-description">
-                                    <h3 class="heading_24px" style="transform: translate3d(10px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; ">Assessment and prediction of stressors among health care workers during covid-19 using machine
-                                        learning techniques</h3>
-                                    <p class="paragraph_18px light-grey" >
-                                        <li style="color: white;">Data had collected using offline and online surveys.</li>
-                                        <li style="color: white;">Exploratory data analysis has been carried out.</li>
-                                        <li style="color: white;">A total of five machine learning algorithms has implemented for classification and prediction of stressors among health care workers.</li>
-                                    </p>
-                                    <div class="arrow-div" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                        <img src="./img/link_Arrow.svg"  alt="Project Arrow Link">
-                                    </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- <div class="padding_bottom">
-                                <a data-w-id="06dd5fec-2b9f-8dc4-de7b-978e5277f3b3" href="#" class="project-wrapper w-inline-block" style="transform: translate3d(0px, 0px, 0px) scale3d(1.02, 1.02, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
-                                    <img src="./img/dsa_page-0001.jpg" width="960" alt="" class="project-image">
-                                    <div class="project-description">
-                                    <h3 class="heading_24px" style="transform: translate3d(10px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; color: white;">Design and Fabrication of UV Based Baggage Sanitization Machine</h3>
-                                    <p class="paragraph_18px light-grey">On the of my recent projects was to design a mobile app for an NGO that aimed at helping people be safe from environmental hazards.</p>
-                                    <div class="arrow-div" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                        <img src="./img/link_Arrow.svg" alt="Project Arrow Link">
-                                    </div>
-                                    </div>
-                                </a>
-                            </div> -->
-                            <div class="button-wrapper">
-                                <a href="#"  class="cta w-button">VIEW&nbsp;ALL&nbsp;PROJECTS</a>
-                            </div>
-                        </div>
-                        <div class="normal-wrapper">
-                            <div class="padding_bottom">
-                                <a href="#" class="project-wrapper _24px-bottom_m w-inline-block" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
-                                    <img src="./assets/img/exploratory-data-analysis.png" width="960"  alt="" class="project-image" style="max-width: 100%;">
-                                    <div class="project-description">
-                                        <h3 class="heading_24px" style="transform: translate3d(10px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Perform Exploratory Data Analysis on dataset Sample Superstore</h3>
-                                        <p class="paragraph_18px light-grey">
-                                            <li style="color: white;">Performed Data Cleaning, Data Visualization and Data Analysis on the dataset to find our weak areas where we can make more profit.</li>
-                                        </p>
-                                        <div class="arrow-div" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                            <img src="./img/link_Arrow.svg" alt="Project Arrow Link">
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="padding_bottom">
-                                <a href="#" class="project-wrapper w-inline-block" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
-                                    <picture>
-                                        <source media="(max-width: 479px)" srcset="./assets/img/sanitization.png">
-                                        <source media="(max-width: 767px)" srcset="./assets/img/sanitization.png">
-                                        <source media="(max-width: 991px)" srcset="./assets/img/sanitization.png">
-                                        <img src="./assets/img/sanitization.png" width="960" alt="" class="project-image" style="max-width: 100%;">
-                                    </picture>
-                                    <div class="project-description">
-                                        <h3 class="heading_24px" style="transform: translate3d(10px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Design and Fabrication of UV Based Baggage Sanitization Machine</h3>
-                                        <p class="paragraph_18px light-grey" style="color: white;">
-                                            <li style="color: white;">The fabricated equipment is presently being used in NIT Calicut Campus to sanitize the baggage of the students.</li>
-                                            <li style="color: white;">Our work has been featured in NITSER (Council of National Institutes of Technology, Science Education and
-                                                Research) COVID 19 Pandemic Research Initiatives.
-                                            </li>
-                                        </p>
-                                        <div class="arrow-div" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                            <img src="./img/link_Arrow.svg" alt="Project Arrow Link">
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            
-                            
-                        </div>
-                    </div>
-                </div>                    
-            </div>
-        </section>
-        <!-- projects -->
-
-
-        <!--===== CERTIFICATIONS =====-->
-        <section class="Certifications bd-grid" id="certificate">
-            <h2 class="section"></h2>
-            <h2 class="section-title" style="color: black;">Certifications</h2>
-            <div class="certi">
-                <script type="text/javascript">
-                    window.jssor_1_slider_init = function() {
-
-                        var jssor_1_options = {
-                            $AutoPlay: 1,
-                            $SlideWidth: 720,
-                            $ArrowNavigatorOptions: {
-                            $Class: $JssorArrowNavigator$
-                            },
-                            $BulletNavigatorOptions: {
-                            $Class: $JssorBulletNavigator$,
-                            $SpacingX: 16,
-                            $SpacingY: 16
-                            }
-                        };
-
-                        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
-                        /*#region responsive code begin*/
-
-                        var MAX_WIDTH = 1020;
-
-                        function ScaleSlider() {
-                            var containerElement = jssor_1_slider.$Elmt.parentNode;
-                            var containerWidth = containerElement.clientWidth;
-
-                            if (containerWidth) {
-
-                                var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-                                jssor_1_slider.$ScaleWidth(expectedWidth);
-                            }
-                            else {
-                                window.setTimeout(ScaleSlider, 30);
-                            }
-                        }
-
-                        ScaleSlider();
-
-                        $Jssor$.$AddEvent(window, "load", ScaleSlider);
-                        $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-                        $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-                        /*#endregion responsive code end*/
-                    };
-                </script>
-                <style>
-                    /*jssor slider loading skin spin css*/
-                    .jssorl-009-spin img {
-                        animation-name: jssorl-009-spin;
-                        animation-duration: 1.6s;
-                        animation-iteration-count: infinite;
-                        animation-timing-function: linear;
-                    }
-
-                    @keyframes jssorl-009-spin {
-                        from { transform: rotate(0deg); }
-                        to { transform: rotate(360deg); }
-                    }
-
-                    /*jssor slider bullet skin 051 css*/
-                    .jssorb051 .i {position:absolute;cursor:pointer;}
-                    .jssorb051 .i .b {fill:black;fill-opacity:0.3;}
-                    .jssorb051 .i:hover .b {fill-opacity:.7;}
-                    .jssorb051 .iav .b {fill-opacity: 1;}
-                    .jssorb051 .i.idn {opacity:.3;}
-
-                    /*jssor slider arrow skin 051 css*/
-                    .jssora051 {display:block;position:absolute;cursor:pointer;}
-                    .jssora051 .a {fill:none;stroke:#2eb1ed;stroke-width:360;stroke-miterlimit:10;}
-                    .jssora051:hover {opacity:.8;}
-                    .jssora051.jssora051dn {opacity:.5;}
-                    .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
-                </style>
-                <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
-                    <!-- Loading Screen -->
-                    <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-                        <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
-                    </div>
-                    <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
-                        <div>
-                            <img data-u="image" src="img/dsa_page-0001.jpg" />
-                        </div>
-                        <div>
-                            <img data-u="image" src="img/sqlc_page-0001.jpg" />
-                        </div>
-                        <div>
-                            <img data-u="image" src="img/achievements/cloudcertificate.JPG" />
-                        </div>
-                        <div>
-                            <img data-u="image" src="img/looker.jpg" />
-                        </div>
-                        <div>
-                            <img data-u="image" src="img/dataanalysis.jpg" />
-                        </div>
-                        <div>
-                            <img data-u="image" src="img/capstone.jpg" />
-                        </div>
-                        
-                    </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">animation</a>
-                    <!-- Bullet Navigator -->
-                    <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:16px;right:16px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
-                        <div data-u="prototype" class="i" style="width:12px;height:12px;">
-                            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                                <circle class="b" cx="8000" cy="8000" r="5800"></circle>
-                            </svg>
-                        </div>
-                    </div>
-                    <!-- Arrow Navigator -->
-                    <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:35px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
-                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                            <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
-                        </svg>
-                    </div>
-                    <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:35px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
-                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                            <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
-                        </svg>
-                    </div>
-                </div>
-                <script type="text/javascript">jssor_1_slider_init();
-                </script>
-            </div>
-        </section>
-
-        <!-- Extra-curricular Activities -->
-        <section class="experience section" id="extra-curricular">
-            <h2 class ="section-title">Extra-curricular Activities</h2>
-            <div class="row bd-grid" >
-                <div class="experience tab-content">
-                    <div class="row">
-                        <div class="timeline">
-                            <div class="row">
-                                <!-- time line item start here -->
-                                <div class="timeline-item">
-                                    <div class="timeline-item-inner exp-shadow">
-                                        <i class="fas fa-briefcase icon"></i>
-                                        <span>Dec, 2022 - Jan, 2023</span>
-                                        <div class="expimg">
-                                            <h3>Participated in </h3>
-                                            <h4>Jagriti Yatra</h4>
-                                            <img src="assets/img/searcelogo.png">
-                                            <ul>
-                                                <li> 
-                                                    <p>Jagriti Yatra is an ambitious train journey of discovery and transformation. It takes hundreds of India's highly motivated youth, from all over India and world, on a 15 day, 8000 km national odyssey to meet the role models - social and business entrepreneurs - of the country. Jagriti Yatra is a confluence of change-makers, leaders, problem-solvers and innovators. </p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-item-inner exp-shadow">
-                                        <i class="fas fa-briefcase icon"></i>
-                                        <span>Nov, 2022 - Feb, 2022</span>
-                                        <div class="expimg">
-                                            <h3>Cadet</h3>
-                                            <h4>National Cadet Corps - Naval Wing</h4>
-                                            <ul>
-                                                <li>
-                                                    <p>National Cadet Corps is the youth wing of the Indian Armed Forces with its headquarters in New Delhi, India. It is open to school and college students on voluntary basis a Tri-Services Organization, comprising the Army, Navy and Air Wing, engaged in grooming the youth of the country into disciplined and patriotic citizens.</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                                <div class="timeline-item">
-                                    <div class="timeline-item-inner exp-shadow">
-                                        <i class="fas fa-briefcase icon"></i>
-                                        <span>June, 2020 - April, 2022</span>
-                                        <div class="expimg">
-                                            <h3>Class Representative</h3>
-                                            <h4>National Institute of Technology Calicut</h4>
-                                            <ul>
-                                                <li>
-                                            <p>Act as a liaison between the students and professors/administration.Represented our class at class Rep Meetings and at program councils.</p>
-                                                </li>
-                                            </ul>    
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- timeline item end here -->
-                                <!-- time line item start here -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-
-        <!-- Achievements -->
-        <section class="achievements section" id="achievements">
-            <h2 class="section-title">Awards &amp; Achievements</h2>
-            <div class="work__container bd-grid">
-                <div class="work__img">
-                  <img src="img/achievements/dataengineer.JPG" alt="">
-                  <div class="text">
-                    <p>Certified Professional Data Engineer</p>
-                  </div>
-                </div>  
-                <div class="work__img">
-                    <img src="img/achievements/gcp_ml.jpg" alt="">
-                    <div class="text">
-                        <p>Certified Professional Machine Learning Engineer</p>
-                    </div>
-                </div>              
-                <div class="work__img">
-                  <img src="img/achievements/Database Engineer.jpg" alt="">
-                  <div class="text">
-                    <p>Certified Professional Cloud Database Engineer</p>
-                  </div>
-                </div>
-                <div class="work__img">
-                    <img src="img/achievements/spark_c.jpg" alt="">
-                    <div class="text">
-                        <p>Spark Programming in Python</p>
-                    </div>
-                </div> 
-                <div class="work__img">
-                    <img src="img/achievements/Data analytics.jpg" alt="">
-                    <div class="text">
-                      <p>Google Data Analytics Certified</p>
-                    </div>
-                </div>           
-                <div class="work__img">
-                    <img src="img/NITIE.jpg" alt="">
-                    <div class="text">
-                      <p>Business and Operationsl Analytics</p>
-                    </div>
-                </div>          
-                <div class="work__img">
-                  <img src="img/achievements/sql.jpg" alt="">
-                  <div class="text">
-                    <p>HackerRank SQL Badge</p>
-                  </div>
-                </div>
-                <div class="work__img work__img__center">
-                  <img src="img/achievements/analytics.jpg" alt="">
-                  <div class="text">
-                    <p>Most entrepreneurial team at Climate Data Hackathon</p>
-                  </div>
-                </div>
-                <div class="work__img">
-                    <img src="img/achievements/employee_spotlight.jpg" alt="">
-                    <div class="text">
-                      <p>Employee Spotlight Award</p>
-                    </div>
-                  </div>
-              
-            </div>
-          </section>
-          
-
-        <!--===== CONTACT =====-->
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Contact Me</h2>
-            <div class="contact__container bd-grid">
-                <form action="" method="post" class="contact__form" id="contact-form">
-                    <label for="text" class="contact__label">Your Name:</label>
-                    <input type="text" placeholder="Name" id="name" class="contact__input" required>
-                    <label for="email" class="contact__label">Your Email:</label>
-                    <input type="email" placeholder="Email" id="email" class="contact__input" required>
-                    <label for="message" class="contact__label">Your Message:</label>
-                    <textarea name="message" id="message" placeholder="Message" class="contact__input" required></textarea>
-                    <button type="submit" class="contact__button button">
-                        <span>Send Message</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                    <span id="msg"></span>
-                </form>
-            </div>
-        </section>
-        <!--===== CONTACT End here=====-->
-        <div class='menubottompic'>
-        </div>
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title"></p>
-                <div class="footer__social">
-                    <a href="https://medium.com/@vangalapudi.dhanya" target="_blank" class="footer__icon"><i class='bx bxl-medium' ></i></a>
-                    <a href="https://medium.com/@dhanyav026" target="_blank" class="footer__icon"><i class='bx bxl-medium' ></i></a>
-                    <a href="https://www.linkedin.com/in/dhanya-vangalapudi" class="footer__icon" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="https://wa.me/9177877367" class="footer__icon" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
-                </div>
-            <p>&#169; 2023 Dhanya V, Inc. All rights reserved</p>
-        </footer>
-
-
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== Email Event =====-->
-        <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-
-    </body>
+  <script src="assets/site/content.js?v=20261021b"></script>
+  <script src="assets/site/app.js?v=20261021b"></script>
+</body>
 </html>
-
-
-
-
-
-
-
-
